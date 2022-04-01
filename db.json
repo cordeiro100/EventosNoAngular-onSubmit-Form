@@ -1,0 +1,22 @@
+{
+  "noticias": [
+    {
+      "id": 1,
+      "imagem": "assets/hamilton.png",
+      "titulo": "Lewis Hamilton",
+      "descricao": "Hamilton fala de problemas: Nada do que fazemos muda o quadro"
+    },
+    {
+      "id": 2,
+      "imagem": "assets/max.png",
+      "titulo": "Max Vewrstappen",
+      "descricao": "Verstappen está na RedBull"
+    },
+    {
+      "id": 3,
+      "imagem": "assets/sergio.png",
+      "titulo": "Sergio Perez",
+      "descricao": "Perez espera ter um bom desempenho nesse fim de semana"
+    }
+  ]
+}
