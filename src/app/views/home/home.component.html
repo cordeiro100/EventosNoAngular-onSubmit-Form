@@ -134,52 +134,26 @@
     </div>
   </section>
 
+
+  <div  class="noticias-api">
   <h2 class="titulo-noticias">Notícias F1</h2>
-  <!-- <section class="container">
+  <section  class="container">
     <div class="row justify-content-center">
-      <div class="card p-2 m-4 col-md-5" style="max-width: 300px">
-        <img
-          class="card-img-top"
-          src="/assets/hamilton.png"
-          alt="Card image cap"
-          
-        />
-        
-
-        <div class="card-body">
-          <h1>Lewis Hamilton</h1>
+      <div  *ngFor="let noticias of listaNoticias"class="card p-2 m-4 col-md-5" style="max-width: 300px">
+       <img [src]="noticias.imagem">
+         <div class="card-body">
+          <h1>{{noticias.titulo}}</h1>
           <p class="card-text">
-            Hamilton fala de problemas: “Nada do que fazemos muda o quadro”
+            {{noticias.descricao}}
           </p>
         </div>
       </div>
 
-      <div class="card p-2 m-4 col-md-5" style="max-width: 300px">
-        <img
-          class="card-img-top"
-          src="/assets/sergio.png"
-          alt="Card image cap"
-        />
-        <div class="card-body">
-          <h1>Sérgio Perez</h1>
-          <p class="card-text">
-            Pérez pede que F1 libere participação de pilotos que testem positivo
-            para Covid-19
-          </p>
-        </div>
-      </div>
-
-      <div class="card p-2 m-4 col-md-5" style="max-width: 300px">
-        <img class="card-img-top" src="/assets/max.png" alt="Card image cap" />
-        <div class="card-body">
-          <h1>Max Verstappen</h1>
-          <p class="card-text">
-            Verstappen cauteloso: “Sábado à tarde veremos em que pé estamos”
-          </p>
-        </div>
-      </div>
+     
+    
     </div>
-  </section> -->
+  </section>
+</div>
 </main>
 
 <footer>
