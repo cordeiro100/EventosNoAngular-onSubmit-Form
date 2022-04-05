@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inspiration&family=Roboto&family=Teko:wght@300;400&display=swap");
-
+@import 'animate.css';
 .foto-banner {
   width: 800px;
 }
@@ -10,10 +10,26 @@ ul a {
   font-family: "Teko", sans-serif;
 }
 
+.procurar {
+  display: flex;
+  position: absolute;
+  top:65px;
+  right: 500px;
+  width: 400px;
+  border-radius: 8px;
+  border: 1px solid;
+}
+
 .carousel img {
   height: 300px;
   object-fit: cover;
 }
+
+.cards{
+  animation: bounceInUp;
+  animation-duration: 1s;
+}
+
 
 main {
   background: silver;
@@ -47,6 +63,8 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: bounceInUp;
+  animation-duration: 2s;
 }
 
 .plataformas img {
@@ -68,6 +86,11 @@ main {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.noticias {
+  animation: bounceInUp;
+  animation-duration: 2s;
 }
 
 footer {

@@ -7,12 +7,16 @@ import { HomeComponent } from './views/home/home.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './views/login/login.component';
+import { FilterByDescription } from './views/home/filter-by-description.pipe';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    LoginComponent,
+    FilterByDescription
    
   ],
   imports: [

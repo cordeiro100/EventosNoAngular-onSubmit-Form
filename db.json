@@ -1,4 +1,18 @@
 {
+  "users": [
+    {
+      "id": 1,
+      "email": "mosscordeiro@hotmail.com",
+      "password": "336336",
+      "nome": "Lucas"
+    },
+    {
+      "email": "pilotocordeiro@hotmail.com",
+      "password": "$2a$10$uMQY2cx2Oi7WwO/RRfYbnu90S6ILaRgCv2rPvERI1qdLEY3HttcUy",
+      "nome": "lucas",
+      "id": 2
+    }
+  ],
   "noticias": [
     {
       "id": 1,
@@ -17,6 +31,24 @@
       "imagem": "assets/sergio.png",
       "titulo": "Sergio Perez",
       "descricao": "Perez espera ter um bom desempenho nesse fim de semana"
+    }
+  ],
+
+  "ligas": [
+    {
+      "id": 1,
+      "titulo": "fadsfasfasdf",
+      "descricao": "fsdafdsfds"
+    },
+    {
+      "id": 2,
+      "titulo": "fadsfasfasdf",
+      "descricao": "fsdafdsfds"
+    },
+    {
+      "id": 3,
+      "titulo": "fadsfasfasdf",
+      "descricao": "fsdafdsfds"
     }
   ]
 }

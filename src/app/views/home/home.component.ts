@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
 import { subscribeOn } from 'rxjs';
 import { Noticias } from 'src/app/models/noticias';
 import { User } from 'src/app/models/user';
@@ -14,15 +15,23 @@ export class HomeComponent implements OnInit {
 constructor(private noticiaService: NoticiasService){}
 
 
+@Input() noticias: Noticias[] = []
+
 listaNoticias = [] as Noticias[]
 
+filter: string = ''
 
 
   ngOnInit(): void {
+
     this.carregarNoticias()
   }
-  userModel = new User('');
 
+public pesquisa(event: Event): void{
+  console.log((<HTMLInputElement>event.target).value)
+}
+
+  userModel = new User("","","");
 
 
 

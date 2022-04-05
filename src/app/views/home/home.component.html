@@ -19,7 +19,16 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Login</a>
+            <input type="text" class="procurar" placeholder="Procura por liga"  (keyup)="pesquisa($event)">
+             
+          </li>
+
+         
+
+
+         
+          <li class="nav-item">
+            <a routerLink="login" class="nav-link active" aria-current="page" href="#">Login</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Ligas</a>
@@ -75,7 +84,7 @@
 </header>
 
 <main>
-  <section class="container">
+  <section class="container ligas">
     <div class="row justify-content-center cards">
       <div class="card p-2 m-4 col-md-5" style="max-width: 300px">
         <img
@@ -127,10 +136,10 @@
   <section id="plataformas-mobile">
     <h1 class="titulo-plataformas">Plataformas dos Campeonatos</h1>
     <div class="plataformas">
-      <img src="/assets/logo-steam 1.png" />
-      <img src="/assets/ps5 1.png" />
-      <img src="/assets/xbox 1.png" />
-      <img src="/assets/f1-logo.png" />
+      <img loading="lazy" src="/assets/logo-steam 1.png" />
+      <img loading="lazy" src="/assets/ps5 1.png" />
+      <img loading="lazy" src="/assets/xbox 1.png" />
+      <img loading="lazy" src="/assets/f1-logo.png" />
     </div>
   </section>
 
@@ -138,9 +147,9 @@
   <div  class="noticias-api">
   <h2 class="titulo-noticias">Notícias F1</h2>
   <section  class="container">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center noticias">
       <div  *ngFor="let noticias of listaNoticias"class="card p-2 m-4 col-md-5" style="max-width: 300px">
-       <img [src]="noticias.imagem">
+       <img loading="lazy" [src]="noticias.imagem" >
          <div class="card-body">
           <h1>{{noticias.titulo}}</h1>
           <p class="card-text">
@@ -185,4 +194,9 @@
       </form>
     </div>
   </div>
+  <div>
+   
+    [listaNoticias]="Noticias[] | filterByDescription: filter"
+  </div>
 </footer>
+
