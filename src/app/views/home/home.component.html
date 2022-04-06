@@ -19,16 +19,21 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <input type="text" class="procurar" placeholder="Procura por liga"  (keyup)="pesquisa($event)">
-             
+            <input
+              type="text"
+              class="procurar"
+              placeholder="Procura por liga"
+              (keyup)="pesquisa($event)"
+            />
           </li>
-
-         
-
-
-         
           <li class="nav-item">
-            <a routerLink="login" class="nav-link active" aria-current="page" href="#">Login</a>
+            <a
+              routerLink="login"
+              class="nav-link active"
+              aria-current="page"
+              href="#"
+              >Login</a
+            >
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Ligas</a>
@@ -43,7 +48,6 @@
       </div>
     </div>
   </nav>
-
   <div class="carousel">
     <div
       id="carouselExampleInterval"
@@ -82,7 +86,6 @@
     </div>
   </div>
 </header>
-
 <main>
   <section class="container ligas">
     <div class="row justify-content-center cards">
@@ -100,7 +103,6 @@
           </p>
         </div>
       </div>
-
       <div class="card p-2 m-4 col-md-5" style="max-width: 300px">
         <img
           class="card-img-top"
@@ -115,7 +117,6 @@
           </p>
         </div>
       </div>
-
       <div class="card p-2 m-4 col-md-5" style="max-width: 300px">
         <img
           class="card-img-top"
@@ -132,7 +133,6 @@
       </div>
     </div>
   </section>
-
   <section id="plataformas-mobile">
     <h1 class="titulo-plataformas">Plataformas dos Campeonatos</h1>
     <div class="plataformas">
@@ -142,29 +142,27 @@
       <img loading="lazy" src="/assets/f1-logo.png" />
     </div>
   </section>
-
-
-  <div  class="noticias-api">
-  <h2 class="titulo-noticias">Notícias F1</h2>
-  <section  class="container">
-    <div class="row justify-content-center noticias">
-      <div  *ngFor="let noticias of listaNoticias"class="card p-2 m-4 col-md-5" style="max-width: 300px">
-       <img loading="lazy" [src]="noticias.imagem" >
-         <div class="card-body">
-          <h1>{{noticias.titulo}}</h1>
-          <p class="card-text">
-            {{noticias.descricao}}
-          </p>
+  <div class="noticias-api">
+    <h2 class="titulo-noticias">Notícias F1</h2>
+    <section class="container">
+      <div class="row justify-content-center noticias">
+        <div
+          *ngFor="let noticias of listaNoticias"
+          class="card p-2 m-4 col-md-5"
+          style="max-width: 300px"
+        >
+          <img loading="lazy" [src]="noticias.imagem" />
+          <div class="card-body">
+            <h1>{{ noticias.titulo }}</h1>
+            <p class="card-text">
+              {{ noticias.descricao }}
+            </p>
+          </div>
         </div>
       </div>
-
-     
-    
-    </div>
-  </section>
-</div>
+    </section>
+  </div>
 </main>
-
 <footer>
   <div class="link-footer">
     <ul class="coluna1">
@@ -172,7 +170,6 @@
       <a href="#">Contato</a>
       <a href="#">Fórum</a>
     </ul>
-
     <ul class="coluna2">
       <a href="#">Dúvidas</a>
       <a href="#">Regras</a>
@@ -189,14 +186,9 @@
           placeholder="Digite aqui sem email"
           [(ngModel)]="userModel.email"
         />
-
         <button type="submit">Cadastrar</button>
       </form>
     </div>
   </div>
-  <div>
-   
-    [listaNoticias]="Noticias[] | filterByDescription: filter"
-  </div>
+  <div>[listaNoticias]="Noticias[] | filterByDescription: filter"</div>
 </footer>
-

@@ -1,64 +1,53 @@
 @import url("https://fonts.googleapis.com/css2?family=Inspiration&family=Roboto&family=Teko:wght@300;400&display=swap");
-@import 'animate.css';
+@import "animate.css";
 .foto-banner {
   width: 800px;
 }
-
 ul a {
   text-transform: uppercase;
   font-size: 30px;
   font-family: "Teko", sans-serif;
 }
-
 .procurar {
   display: flex;
   position: absolute;
-  top:65px;
+  top: 65px;
   right: 500px;
   width: 400px;
   border-radius: 8px;
   border: 1px solid;
 }
-
 .carousel img {
   height: 300px;
   object-fit: cover;
 }
-
-.cards{
+.cards {
   animation: bounceInUp;
-  animation-duration: 1s;
+  animation-duration: 2s;
 }
-
-
 main {
   background: silver;
 }
-
 .card {
   background: rgba(0, 0, 0, 0.5);
   box-shadow: 0px 0px 30px greenyellow, 0px 0px 10px silver;
 }
-
 .card-body h1 {
   font-family: "Teko", sans-serif;
   background-color: red;
   border-radius: 8px;
   color: white;
 }
-
 .card-body p {
   font-family: "Teko", sans-serif;
   color: white;
 }
-
 .titulo-plataformas {
   text-align: center;
   font-family: "Teko", sans-serif;
   margin-top: 100px;
   box-shadow: 0px 0px 30px greenyellow, 0px 0px 10px silver;
 }
-
 .plataformas {
   display: flex;
   justify-content: center;
@@ -66,44 +55,27 @@ main {
   animation: bounceInUp;
   animation-duration: 2s;
 }
-
 .plataformas img {
   margin: 100px 100px 0 100px;
 }
-
-
-
 .titulo-noticias {
   text-align: center;
   font-family: "Teko", sans-serif;
   box-shadow: 0px 0px 30px greenyellow, 0px 0px 10px silver;
   margin-top: 50px;
 }
-
-.hamilton-noticia {
-  border: 1px solid;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
 .noticias {
   animation: bounceInUp;
   animation-duration: 2s;
 }
-
 footer {
   background: black;
   margin-top: 10px;
   box-shadow: 0px 0px 30px greenyellow, 0px 0px 10px silver;
-
 }
-
 .link-footer {
   display: flex;
 }
-
 .link-footer a {
   text-decoration: none;
   text-transform: uppercase;
@@ -111,12 +83,10 @@ footer {
   font-family: "Teko", sans-serif;
   color: white;
 }
-
 .link-footer img {
   width: 100px;
   margin-left: 100px;
 }
-
 .coluna1 {
   display: flex;
   flex-direction: column;
@@ -126,18 +96,15 @@ footer {
   flex-direction: column;
   margin-left: 300px;
 }
-
 .link-footer input {
   margin-left: 200px;
 }
-
 .link-footer p {
   color: silver;
   text-transform: uppercase;
   margin-left: 600px;
   margin-top: 20px;
 }
-
 .link-footer input {
   position: relative;
   top: -50px;
@@ -146,7 +113,6 @@ footer {
   border: 1px solid;
   padding: 5px;
 }
-
 .link-footer button {
   position: relative;
   top: -53px;
@@ -159,14 +125,9 @@ footer {
   text-transform: uppercase;
   font-family: "Teko", sans-serif;
 }
-
 button:hover {
   filter: brightness(0.8);
 }
-
-
-
-
 @media screen and (max-width: 1200px) {
   .foto-banner {
     width: 400px;
@@ -175,23 +136,17 @@ button:hover {
     width: 80px;
     margin: 80px 60px 0 80px;
   }
-.coluna2 {
-  margin-left: 100px;
+  .coluna2 {
+    margin-left: 100px;
+  }
+  .link-footer img {
+    width: 70px;
+    margin-left: 80px;
+  }
+  .link-footer form {
+    display: none;
+  }
 }
-
-.link-footer img {
-  width: 70px;
-  margin-left: 80px;
-
-}
-
-.link-footer form {
-  display: none;
-}
-
-
-}
-
 @media screen and (max-width: 768px) {
   .foto-banner {
     width: 150px;
@@ -200,15 +155,12 @@ button:hover {
   #plataformas-mobile {
     display: none;
   }
-
   .coluna2 {
     margin-left: 50px;
   }
-
   .link-footer a {
     font-size: 10px;
   }
-
   .link-footer img {
     margin-left: 50px;
     width: 50px;
