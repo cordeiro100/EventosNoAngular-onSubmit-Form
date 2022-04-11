@@ -5,6 +5,12 @@
       "email": "mosscordeiro@hotmail.com",
       "password": "336336",
       "nome": "Lucas"
+    },
+    {
+      "email": "pilotocordeiro@hotmail.com",
+      "password": "$2a$10$uMQY2cx2Oi7WwO/RRfYbnu90S6ILaRgCv2rPvERI1qdLEY3HttcUy",
+      "nome": "lucas",
+      "id": 2
     }
   ],
   "noticias": [
