@@ -36,21 +36,12 @@
   </nav>
   <section>
     <div class="box-cadastro">
-      <form #userForm="ngForm" (ngSubmit)="logar()">
+      <form  #userForm="ngForm" (ngSubmit)="logar()">
         <label for="email">Email: </label>
-        <input
-          type="email"
-          name="email"
-          id="email"
-          [(ngModel)]="loginModel.email"
-        />
+        <input type="email" name="email" id="email"  [(ngModel)]="loginModel.email" >
+        
         <label for="password">Senha: </label>
-        <input
-          type="password"
-          name="password"
-          id="password"
-          [(ngModel)]="loginModel.password"
-        />
+        <input type="password" name="password" id="password" [(ngModel)]="loginModel.password" >
         <button>Logar</button>
       </form>
       <p id="mensagem" *ngIf="mensagem != ''">{{ mensagem }}</p>
